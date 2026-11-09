@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Оставьте email и получите ссылку в день запуска сайта.">
+    <title>Будьте в числе первых</title>
+    <link rel="stylesheet" href="/styles.css">
+    <script src="/form.js" defer></script>
+  </head>
+  <body>
+    <div class="page">
+      <header class="top">
+        <span class="top-mark" aria-hidden="true">✳</span>
+        <span>Список ожидания</span>
+        <span class="top-number" aria-hidden="true">01 / ЗАПУСК</span>
+      </header>
+      <main class="hero">
+        <section class="intro" aria-labelledby="title">
+          <p class="eyebrow"><span></span> <span id="phase">Скоро открытие</span></p>
+          <h1 id="title">Будьте в числе <em>первых<span>.</span></em></h1>
+          <p class="description" id="description">Оставьте email — пришлём ссылку, как только откроется сайт.</p>
+          <form id="signup" method="post" action="/api/subscribe">
+            <label for="email">Ваш email</label>
+            <input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" maxlength="254" required>
+            <button type="submit">Получить ссылку в день запуска <span aria-hidden="true">↗</span></button>
+            <p class="note">Отправим одно письмо со ссылкой на сайт.</p>
+            <noscript><p class="note">Для записи включите JavaScript.</p></noscript>
+          </form>
+          <p id="status" class="status" role="status"></p>
+          <a id="visit" class="visit" hidden>Перейти на сайт <span aria-hidden="true">↗</span></a>
+        </section>
+        <div class="art" aria-hidden="true">
+          <span class="art-label">В ДЕНЬ ЗАПУСКА</span>
+          <svg viewBox="0 0 440 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="220" cy="211" r="157" stroke="#b9a9ff" stroke-opacity=".45" stroke-dasharray="3 7"/>
+            <circle cx="220" cy="211" r="126" stroke="#b9a9ff" stroke-opacity=".26"/>
+            <path d="M220 54v314M63 211h314" stroke="#b9a9ff" stroke-opacity=".3" stroke-dasharray="3 7"/>
+            <path d="M82 109v29m-14-15h28M354 296v24m-12-12h24" stroke="#ece5ff" stroke-width="2"/>
+            <circle cx="101" cy="301" r="4" fill="#d1fc78"/>
+            <circle cx="331" cy="87" r="4" fill="#d1fc78"/>
+            <g transform="rotate(-11 220 218)">
+              <rect x="106" y="158" width="237" height="151" rx="15" fill="#2b1862"/>
+              <path d="M101 165l106-77a13 13 0 0 1 15 0l106 77v120a12 12 0 0 1-12 12H113a12 12 0 0 1-12-12z" fill="#ac93ff" stroke="#24143f" stroke-width="2"/>
+              <rect x="122" y="116" width="184" height="151" rx="10" fill="#f9f5ff" stroke="#24143f" stroke-width="2"/>
+              <path d="M146 191h132m-132 15h100" stroke="#b6a3ed" stroke-width="2" stroke-linecap="round"/>
+              <path d="M146 144h22m-11-11v22m-8-19 16 16m0-16-16 16" stroke="#6543c8" stroke-width="2" stroke-linecap="round"/>
+              <path d="M101 166l113 69 114-69v119a12 12 0 0 1-12 12H113a12 12 0 0 1-12-12z" fill="#ded0ff" stroke="#24143f" stroke-width="2" stroke-linejoin="round"/>
+              <path d="M105 293l86-72m134 72-87-72" stroke="#24143f" stroke-width="2"/>
+            </g>
+            <circle cx="323" cy="132" r="33" fill="#d1fc78" stroke="#24143f" stroke-width="2"/>
+            <path d="M312 143l22-22m-17 0h17v17" stroke="#24143f" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span class="art-caption"><span>01</span> / ПИСЬМО СО ССЫЛКОЙ</span>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

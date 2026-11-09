@@ -1,0 +1,10 @@
+{
+  "name": "launch-waitlist",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=24" },
+  "scripts": {
+    "start": "node app.js",
+    "launch": "node --env-file-if-exists=.env app.js launch"
+  }
+}
